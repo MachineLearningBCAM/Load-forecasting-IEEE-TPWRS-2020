@@ -17,6 +17,6 @@ for j = i+L:L:n - L
     % Learning
     parameters = update_model(parameters, data.consumption(j+1:j+L), data.consumption(j:j+L-1), data.DoW(j+1:j+L), data.HoD(j+1:j+L), lambdad, lambdar, lambdat, data.temperature(j+1:j+L));
 end
-% Test
+% Prediction errors
 [MAPE, RMSE] = test(predictions, load_demand);
 end
