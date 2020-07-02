@@ -1,27 +1,24 @@
-function parameters = update_model(parameters, s, s0, DoW, HoD, lambdad, lambdar, lambdat, w)
-L = length(s);
+function [Theta, Gamma] = update_model(Theta, Gamma, y, s0, c, lambdad, lambdar, w)
+% y vector of new loads
+% x = [s0, w, wt]; (wt is included in Theta is updated in this step)
+L = length(y);
+y = [s0, y];
 for i = 1:L
-    % Weekday -> j = 1
-    % Weekend or holiday -> j = 2
-    [parameters.wt(HoD(i), 1), parameters.sigmat(HoD(i), 1), parameters.Pt(HoD(i), 1), parameters.gammat(HoD(i), 1)] = update_parameters(parameters.wt(HoD(i), 1), parameters.sigmat(HoD(i), 1), parameters.Pt(HoD(i), 1), 1, parameters.gammat(HoD(i), 1), lambdat, w(i));
-    if DoW(i) >=2 && DoW(i) <=6
-        j = 1;
-    else
-        j = 2;
-    end
-    if parameters.wt(HoD(i), 1) - w(i) > 20 && (w(i) > 80 || w(i) < 20)
+    % Mean of temperatures
+    [Theta.wt(c(i)), Theta.sigmat(c(i)), Gamma.Pt(c(i)), Gamma.gammat(c(i))] = update_parameters(Theta.wt(c(i)), Theta.sigmat(c(i)), Gamma.Pt(c(i)), 1, Gamma.gammat(c(i)), 1, w(i));
+    if Gamma.wt(c(i)) - w(i) > 20 && (w(i) > 80 || w(i) < 20)
         alpha1 = 1;
         alpha2 = 0;
-    elseif parameters.wt(HoD(i), 1) - w(i) < - 20 && (w(i) > 80 || w(i) < 20)
+    elseif Theta.wt(c(i)) - w(i) < - 20 && (w(i) > 80 || w(i) < 20)
         alpha1 = 0;
         alpha2 = 1;
     else
         alpha1 = 0;
         alpha2 = 0;
     end
-    ud = [1, s0(i)]';
-    [parameters.etad(:, HoD(i), j), parameters.sigmad(HoD(i), j), parameters.Pd(:, :, HoD(i), j), parameters.gammad(HoD(i), j)] = update_parameters(parameters.etad(:, HoD(i), j), parameters.sigmad(HoD(i), j), parameters.Pd(:, :, HoD(i), j), ud, parameters.gammad(HoD(i), j), lambdad, s(i));
+    ud = [1, y(i-1)]';
+    [Theta.etad(:, c(i)), Theta.sigmad(c(i)), Gamma.Pd(:, :, c(i)), Gamma.gammad(c(i))] = update_parameters(Theta.etad(:, c(i)), Theta.sigmad(c(i)), Gamma.Pd(:, :, c(i)), ud, Gamma.gammad(c(i)), lambdad, y(i));
     ur = [1, alpha1, alpha2]';
-    [parameters.etar(:, HoD(i), j), parameters.sigmar(HoD(i), j), parameters.Pr(:, :, HoD(i), j), parameters.gammar(HoD(i), j)] = update_parameters(parameters.etar(:, HoD(i), j), parameters.sigmar(HoD(i), j), parameters.Pr(:, :, HoD(i), j), ur, parameters.gammar(HoD(i), j), lambdar, s(i));
+    [Theta.etar(:, c(i)), Theta.sigmar(c(i)), Gamma.Pr(:, :, c(i)), Gamma.gammar(c(i))] = update_parameters(Theta.etar(:, c(i)), Theta.sigmar(c(i)), Gamma.Pr(:, :, c(i)), ur, Gamma.gammar(c(i)), lambdar, y(i));
 end
 end
