@@ -1,17 +1,21 @@
 function [pred_s, e] = prediction(Theta, x, C)
-% x = [s0, w, wt]; (wt is included in Theta)
+% Theta is the list of model parameters
+% x = [s0, w]; instance vector (wt is included in Theta)
+% C is the calendar information
 L = length(x)-1; % Prediction horizon
 pred_s = zeros(L+1, 1); % Predictions
 e = zeros(L+1, 1); % Estimated errors
-pred_s(1, 1) = s0;
+pred_s(1, 1) = x(1); 
+w = x(2:end); % temperature
 for i=2:L+1
     c = C(i-1);
+    % Feature vector that represents load
     ud = [1, pred_s(i-1)]';
     % Feature vector that represents observations
-if wt(c) - w(i-1) > 20 && (w(i-1) > 80 || w(i-1) < 20)
+if Theta.wt(c) - w(i-1) > 20 && (w(i-1) > 80 || w(i-1) < 20)
     alpha1 = 1;
     alpha2 = 0;
-elseif wt(c) - w(i-1) < - 20 && (w(i-1) > 80 || w(i-1) < 20)
+elseif Theta.wt(c) - w(i-1) < - 20 && (w(i-1) > 80 || w(i-1) < 20)
     alpha1 = 0;
     alpha2 = 1;
 else
