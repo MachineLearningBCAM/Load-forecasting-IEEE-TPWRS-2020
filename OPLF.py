@@ -10,6 +10,7 @@ mat = loadmat('path/filename.mat')  # load mat-file
 mdata = mat['data']  # variable in mat file
 mdtype = mdata.dtype 
 data = {n: mdata[n][0, 0] for n in mdtype.names}
+data["c"] = data["c"] - 1
 
 # [MAPE, RMSE, predictions, load_demand] = OPLF(data, 300, 0.2, 0.7, 24, 48, 3)
 
@@ -128,7 +129,7 @@ def OPLF(data, days_train, lambdad, lambdar, L, C, R):
   # R = 3 length of feature vector of observations
   n = len(data.get('consumption'))
   consumption = data.get('consumption')
-  c = data.get('C')
+  c = data.get('c')
   temperature = data.get('temperature')
   n_train = 24*days_train
   [Theta, Gamma] = initialize(C, R)
