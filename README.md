@@ -2,7 +2,7 @@
 
 This repository contains code for the paper Online Probabilistic Load Forecasting. We use the implementation details described in the paper.
 
-# Implementation of the method
+## Implementation of the method
 
 OPLF folder contains all the files with Matlab scripts required to execute the method:
 
@@ -15,7 +15,7 @@ OPLF folder contains all the files with Matlab scripts required to execute the m
 
 This repository also contains the Python code and a Jupyter notebook.
 
-# Data
+## Data
 
 We use publicly available data and we save it in a .mat file that contains:
 
@@ -23,6 +23,6 @@ We use publicly available data and we save it in a .mat file that contains:
 * Temperature time series
 * Date and hour or timestamp when the load is measure
 
-# Test case
+## Test case
 
 We display in this reposity an example for a dataset that contains load data of 400 buildings. We describe this dataset in the paper. The implementation details are the same for every dataset.
