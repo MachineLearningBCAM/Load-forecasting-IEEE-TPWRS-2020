@@ -1,8 +1,8 @@
-# Online Probabilistic Load Forecasting
+# Online Probabilistic Load Forecasting (OPLF)
 
 This repository contains code for the paper Online Probabilistic Load Forecasting. We use the implementation details described in the paper.
 
-# Method implemeted:
+# Implementation of the method
 
 OPLF folder contains all the files with Matlab scripts required to execute the method:
 
@@ -15,7 +15,7 @@ OPLF folder contains all the files with Matlab scripts required to execute the m
 
 This repository also contains the Python code and a Jupyter notebook.
 
-# Data:
+# Data
 
 We use publicly available data and we save it in a .mat file that contains:
 
