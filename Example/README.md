@@ -27,7 +27,8 @@ MAPE = 6.27;
 
 We plot one week of load demand, load forecasts, and estimated errors
 
+![alt text](predictions.png)
 
 We show the CDF of error
 
-
+![alt text](CDF.png)
