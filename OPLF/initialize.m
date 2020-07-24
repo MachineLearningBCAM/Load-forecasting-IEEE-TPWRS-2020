@@ -1,4 +1,8 @@
 function [Theta, Gamma] = initialize(C, R)
+% 
+% This file includes code for the paper Online Probabilistic Load Forecasting. 
+% @author: Verónica Álvarez
+% 
 % This function initializes model parameters and state variables for each calendar type c = 1, 2, ..., C
 % 
 % Inputs
