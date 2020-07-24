@@ -1,4 +1,8 @@
 function [Theta, Gamma] = update_model(Theta, Gamma, y, x, c, lambdad, lambdar)
+% 
+% This file includes code for the paper Online Probabilistic Load Forecasting. 
+% @author: Verónica Álvarez
+% 
 % This function updates model parameters and state variables
 % 
 % Inputs 
