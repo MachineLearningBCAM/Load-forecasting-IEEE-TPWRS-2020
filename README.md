@@ -31,7 +31,7 @@ We display in this reposity an example for a dataset that contains load data of 
 
 ## Citation
 
-If you find useful the code in your research, please include explicit mention of our work in your publication with the following corresponding entries in your bibliography:
+If you find useful the code in your research, please include explicit mention of our work in your publication with the following corresponding entry in your bibliography:
 
 <a id="1">[1]</a> 
 V. Alvarez, S. Mazuelas, J.A. Lozano.
