@@ -1,4 +1,14 @@
 function [MAPE, RMSE] = test(forecast, load_demand)
+% This function quantifies the prediction errors root mean square error (RMSE) and mean average percentage error (MAPE)
+% 
+% Inputs 
+    % Forecast is a vector of load forecasts
+    % load_demand is a vector of load corresponding with load forecasts
+%
+% Outputs
+    % MAPE
+    % RMSE
+%
 m = [];
 r = [];
 n = length(pred);
