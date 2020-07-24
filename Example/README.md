@@ -1,8 +1,6 @@
 # Example
 
-We forecast load for 400 buildings
-
-The dataset contains load data in 2013.
+We forecast load for [400 buildings](https://data.mendeley.com/datasets/zm4f727vvr/1#file-a01cdaa0-340d-4ebf-8fe5-c59a53d8f6b0). The dataset contains electricity load data for 6031 residential customers in NEW South Wales for the calendar year 2013. We forecast the mean of load for 400 buildings.
 
 We execute the following code in Matlab language
 
