@@ -1,10 +1,18 @@
 function [Theta, Gamma] = update_model(Theta, Gamma, y, x, c, lambdad, lambdar)
-% Theta is the list of model parameters
-% Gamma is the list of state variables
-% y vector of new loads
-% x = [s0, w]; instance vector (wt is included in Theta is updated in this step)
-% c is the calendar information
-% lambdad, lambdar forgetting factors
+% This function updates model parameters and state variables
+% 
+% Inputs 
+    % Theta is the list of model parameters
+    % Gamma is the list of state variables
+    % y is the vector of new loads
+    % x = [s0, w] is the instance vector (wt is included in Theta is updated in this step)
+    % c is the calendar information
+    % lambdad, lambdar forgetting factors
+%
+% Outputs
+    % Theta is the updated list of model parameters
+    % Gamma is the updated list of state variables
+%
 % Prediction horizon
 s0 = x(1);
 w = x(2:end);
