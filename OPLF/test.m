@@ -1,4 +1,8 @@
 function [MAPE, RMSE] = test(forecast, load_demand)
+% 
+% This file includes code for the paper Online Probabilistic Load Forecasting. 
+% @author: Verónica Álvarez
+% 
 % This function quantifies the prediction errors root mean square error (RMSE) and mean average percentage error (MAPE)
 % 
 % Inputs 
