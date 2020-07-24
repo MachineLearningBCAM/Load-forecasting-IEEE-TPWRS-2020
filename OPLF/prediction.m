@@ -1,4 +1,8 @@
 function [pred_s, e] = prediction(Theta, x, C)
+% 
+% This file includes code for the paper Online Probabilistic Load Forecasting. 
+% @author: Verónica Álvarez
+% 
 % This function obtains load forecasts and estimates of their accuracy.
 %
 % Inputs
