@@ -1,7 +1,14 @@
 function [Theta, Gamma] = initialize(C, R)
-% C length of calendar information
-% R is the length of feature vector representation of observations
-% Initialize model parameters and state variables for each calendar type c = 1, 2, ..., C
+% This function initializes model parameters and state variables for each calendar type c = 1, 2, ..., C
+% 
+% Inputs
+    % C is the length of calendar information
+    % R is the length of feature vector representation of observations
+% 
+% Outputs
+    % Theta is the updated list of model parameters
+    % Gamma is the updated list of state variables require to update model parameters
+%
 % For each c, etad is a vector with length 2
 Theta.etad = zeros(2, C); 
 Theta.sigmad = zeros(1, C);
