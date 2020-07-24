@@ -1,7 +1,14 @@
 function [pred_s, e] = prediction(Theta, x, C)
-% Theta is the list of model parameters
-% x = [s0, w]; instance vector (wt is included in Theta)
-% C is the calendar information
+% This function obtains load forecasts and estimates of their accuracy.
+%
+% Inputs
+    % Theta is the list of model parameters
+    % x = [s0, w] is the instance vector (wt is included in Theta)
+    % C is the calendar information
+% Outputs
+    % pred_s is the vector of L load forecasts
+    % e is the vector of L estimations of the accuracy of load forecasts
+% 
 L = length(x)-1; % Prediction horizon
 pred_s = zeros(L+1, 1); % Predictions
 e = zeros(L+1, 1); % Estimated errors
