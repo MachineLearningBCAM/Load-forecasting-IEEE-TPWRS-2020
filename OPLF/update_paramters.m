@@ -1,4 +1,8 @@
 function [eta, sigma, P, gamma] = update_parameters(eta, sigma, P, gamma, lambda, s, u)
+% 
+% This file includes code for the paper Online Probabilistic Load Forecasting. 
+% @author: Verónica Álvarez
+% 
 % This function updates recursively each parameter and each state variable
 %
 % Inputs
