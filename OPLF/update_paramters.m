@@ -1,9 +1,21 @@
 function [eta, sigma, P, gamma] = update_parameters(eta, sigma, P, gamma, lambda, s, u)
-% This function updates recursively parameters eta and sigma and the state
-% variables P and gamma
-% u is the feature vector
-% lambda is the forgetting factor
-% s is the load
+% This function updates recursively each parameter and each state variable
+%
+% Inputs
+    % eta
+    % sigma
+    % P
+    % gamma
+    % lambda is the forgetting factor
+    % u is the feature vector
+    % s is the load
+% 
+% Outputs
+    % eta is the updated eta parameter
+    % sigma is the updated sigma parameter
+    % P is the updated state variable P
+    % gamma is the updated state variable gamma
+%
 % Avoid possible inestabilities of matrix P
 if trace(P) > 10
     P = eye(length(P));
