@@ -1,6 +1,6 @@
 # Online Probabilistic Load Forecasting (OPLF)
 
-This repository contains code for the paper Online Probabilistic Load Forecasting. We use the implementation details described in the paper.
+This repository contains code for the paper Online Probabilistic Load Forecasting [[1]](#1). We use the implementation details described in the paper.
 
 ![grab-landing-page](predictions.gif)
 
@@ -27,4 +27,25 @@ We use publicly available data and we save it in a .mat file that contains:
 
 ## Test case
 
-We display in this reposity an example for a dataset that contains load data of 400 buildings. We describe this dataset in the paper. The implementation details are the same for every dataset.
+We display in this reposity an example for a dataset that contains load data of [400 buildings](https://data.mendeley.com/datasets/zm4f727vvr/1#file-a01cdaa0-340d-4ebf-8fe5-c59a53d8f6b0). More details of the dataset are given in the [Example folder](/Example).
+
+## Citation
+
+If you find useful the code in your research, please include explicit mention of our work in your publication with the following corresponding entries in your bibliography:
+
+<a id="1">[1]</a> 
+V. Alvarez, S. Mazuelas, J.A. Lozano.
+"Online Probabilistic Load Forecasting,"
+*Submitted to IEEE-Transactions on Power Systems.* 2020.
+
+The corresponding BiBTeX citation is given below:
+
+```
+@article{alvarez2020online,
+  title={Online Probabilistic Load Forecasting},
+  author={Alvarez, Verónica and Mazuelas, Santiago and Lozano, José Antonio},
+  journal={Submitted to IEEE Transactions on Power Systems},
+  year={2020},
+  publisher={IEEE}
+}
+```
