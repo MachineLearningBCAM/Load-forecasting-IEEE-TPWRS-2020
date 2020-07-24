@@ -1,3 +1,9 @@
+"""
+This file includes code for the paper Online Probabilistic Load Forecasting. 
+
+@author: Verónica Álvarez
+"""
+
 import numpy as np
 from scipy.io import loadmat  # this is the SciPy module that loads mat-files
 import matplotlib.pyplot as plt
