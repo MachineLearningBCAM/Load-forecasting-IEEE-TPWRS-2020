@@ -2,8 +2,8 @@
 % This file includes code for the paper Probabilistic Load Forecasting based on Adaptive Online Learning. 
 % @author: Verónica Álvarez
 % 
-function [RMSE, MAPE, predictions, load_demand, estimated_errors] = OPLF(data, days_train, lambdad, lambdar, L, C, R)
-% [RMSE, MAPE, predictions, load_demand, estimated_errors] = OPLF(data, 1, 0.2, 0.7, 24, 48, 3);
+function [RMSE, MAPE, predictions, load_demand, estimated_errors] = APLF(data, days_train, lambdad, lambdar, L, C, R)
+% [RMSE, MAPE, predictions, load_demand, estimated_errors] = APLF(data, 1, 0.2, 0.7, 24, 48, 3);
 %
 % Inputs
     % data is a Matlab struct such that:
