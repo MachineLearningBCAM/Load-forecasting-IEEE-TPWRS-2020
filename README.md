@@ -7,7 +7,7 @@ This repository contains code for the paper Probabilistic Load Forecasting based
 
 APLF folder contains all the files with Matlab scripts required to execute the method:
 
-* OPLF.m is the main file.
+* APLF.m is the main file.
 * initialize.m function inizializes model parameters.
 * prediction.m function obtain load forecasts and probabilistic load forecasts in form of mean and standard deviation of a Gaussian density function.
 * test.m function quantifies the prediction errors RMSE and MAPE.
