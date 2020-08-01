@@ -165,7 +165,7 @@ for j in range(i+L+1, n-L, L):
 [MAPE, RMSE] = test(predictions, load_demand)
 print('MAPE = ', MAPE)
 print('RMSE = ', RMSE)
-with open('results.csv', 'wb+') as file:
+with open('results.csv', 'w+') as file:
     writer = csv.writer(file)
     writer.writerow(("predictions", "load demand", "estimated errors"))
     rcount = 0
