@@ -1,12 +1,11 @@
-# Online Probabilistic Load Forecasting (OPLF)
-
-This repository contains code for the paper Online Probabilistic Load Forecasting [[1]](#1). We use the implementation details described in the paper.
+# Probabilistic Load Forecasting based on Adaptive Online Learning (APLF)
+This repository contains code for the paper Probabilistic Load Forecasting based on Adaptive Online Learning [[1]](#1). We use the implementation details described in the paper.
 
 ![grab-landing-page](predictions.gif)
 
 ## Implementation of the method
 
-OPLF folder contains all the files with Matlab scripts required to execute the method:
+APLF folder contains all the files with Matlab scripts required to execute the method:
 
 * OPLF.m is the main file.
 * initialize.m function inizializes model parameters.
@@ -45,14 +44,14 @@ If you find useful the code in your research, please include explicit mention of
 
 <a id="1">[1]</a> 
 V. Alvarez, S. Mazuelas, J.A. Lozano.
-"Online Probabilistic Load Forecasting,"
+"Probabilistic Load Forecasting based on Adaptive Online Learning,"
 *Submitted to IEEE-Transactions on Power Systems.* 2020.
 
 The corresponding BiBTeX citation is given below:
 
 ```
 @article{alvarez2020online,
-  title={Online Probabilistic Load Forecasting},
+  title={Probabilistic Load Forecasting based on Adaptive Online Learning},
   author={Alvarez, Verónica and Mazuelas, Santiago and Lozano, José Antonio},
   journal={Submitted to IEEE Transactions on Power Systems},
   year={2020},
