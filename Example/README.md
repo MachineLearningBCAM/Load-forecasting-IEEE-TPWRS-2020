@@ -13,7 +13,7 @@ lambdar = 0.7; # Forgetting factor
 L = 24; # Prediction horizon
 C = 48; # Calendar types
 R = 3; # Length of feature vector that represents observations
-[RMSE, MAPE, load_forecasts, load_demand, estimated_errors] = OPLF(data, days_training, lambdas, lambdar, L, C, R);
+[RMSE, MAPE, load_forecasts, load_demand, estimated_errors] = APLF(data, days_training, lambdas, lambdar, L, C, R);
 ```
 
 We obtain that 
