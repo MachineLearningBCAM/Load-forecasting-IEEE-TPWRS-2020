@@ -69,6 +69,12 @@ The corresponding BiBTeX citation is given below:
 
 ## Installation
 
+```console
 git clone https://github.com/VeronicaAlvarez/online-probabilistic-load-forecasting
+```
 
-
+Running python code:
+```console
+cd online-probabilistic-load-forecasting\APLF
+python APLF.py
+```
