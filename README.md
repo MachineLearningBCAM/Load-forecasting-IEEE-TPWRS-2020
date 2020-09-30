@@ -50,11 +50,6 @@ V. Alvarez, S. Mazuelas, J.A. Lozano.
 "Probabilistic Load Forecasting based on Adaptive Online Learning,"
 *Submitted to IEEE-Transactions on Power Systems.* 2020.
 
-## License 
-
-[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
-
-
 The corresponding BiBTeX citation is given below:
 
 ```
@@ -66,3 +61,14 @@ The corresponding BiBTeX citation is given below:
   publisher={IEEE}
 }
 ```
+
+## License 
+
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+
+
+## Installation
+
+git clone https://github.com/VeronicaAlvarez/online-probabilistic-load-forecasting
+
+
