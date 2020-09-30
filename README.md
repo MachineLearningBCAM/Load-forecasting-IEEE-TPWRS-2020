@@ -1,6 +1,6 @@
 # Probabilistic Load Forecasting based on Adaptive Online Learning (APLF)
 
-[![GitHub license](https://img.shields.io/badge/License-MIT-blue)](https://github.com/VeronicaAlvarez/online-probabilistic-load-forecasting/blob/master/LICENSE) [![Made with!](https://img.shields.io/badge/Made%20with-MATLAB-orange!)](APLF/Matlab) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](APLF/APLF.py) [![Made with!](https://img.shields.io/badge/Made%20with-Jupyter%20Notebook-yellow!)](APLF/APLF.ipynb)
+[![GitHub license](https://img.shields.io/badge/License-MIT-blue)](https://github.com/VeronicaAlvarez/online-probabilistic-load-forecasting/blob/master/LICENSE) [![Made with!](https://img.shields.io/badge/Made%20with-MATLAB-red)](APLF/Matlab) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](APLF/APLF.py) [![Made with!](https://img.shields.io/badge/Made%20with-Jupyter%20Notebook-orange)](APLF/APLF.ipynb) [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)]([#Support-and-Author)
 
 This repository contains code for the paper Probabilistic Load Forecasting based on Adaptive Online Learning [[1]](#1). We use the implementation details described in the paper.
 
@@ -43,7 +43,7 @@ We display in this reposity an example for a dataset that contains load data of 
 
 Verónica Álvarez Castro
 
-veronicaalvcas@gmail.com [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)]()
+veronicaalvcas@gmail.com
 
 [![ForTheBadge built-with-science](http://ForTheBadge.com/images/badges/built-with-science.svg)](https://github.com/VeronicaAlvarez)
 
