@@ -1,11 +1,16 @@
 # Probabilistic Load Forecasting based on Adaptive Online Learning (APLF)
+
+Verónica Álvarez Castro
+
+veronicaalvcas@gmail.com
+
 This repository contains code for the paper Probabilistic Load Forecasting based on Adaptive Online Learning [[1]](#1). We use the implementation details described in the paper.
 
 ![grab-landing-page](docs/images/predictions.gif)
 
 ## Implementation of the method
 
-APLF folder contains the Python code [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](APLF/APLF.py), a Jupyter notebook [![nbviewer](https://img.shields.io/badge/jupyter_notebooks-nbviewer-purple.svg?style=flat-square)](APLF/APLF.ipynb) and a Matlab folder that contains all the Matlab scripts required to execute the method:
+APLF folder contains the Python code [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](APLF/APLF.py), a Jupyter notebook [![nbviewer](https://img.shields.io/badge/jupyter_notebooks-nbviewer-purple.svg?style=flat-square)](APLF/APLF.ipynb) and a [Matlab folder](APLF/Matlab) that contains all the Matlab scripts required to execute the method:
 
 * APLF.m is the main file.
 * initialize.m function inizializes model parameters.
@@ -44,6 +49,11 @@ If you find useful the code in your research, please include explicit mention of
 V. Alvarez, S. Mazuelas, J.A. Lozano.
 "Probabilistic Load Forecasting based on Adaptive Online Learning,"
 *Submitted to IEEE-Transactions on Power Systems.* 2020.
+
+## License 
+
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+
 
 The corresponding BiBTeX citation is given below:
 
