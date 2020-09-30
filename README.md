@@ -43,6 +43,8 @@ Verónica Álvarez Castro
 
 veronicaalvcas@gmail.com [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)]()
 
+[![ForTheBadge built-with-science](http://ForTheBadge.com/images/badges/built-with-science.svg)](https://github.com/VeronicaAlvarez)
+
 ## Citation
 
 If you find useful the code in your research, please include explicit mention of our work in your publication with the following corresponding entry in your bibliography:
