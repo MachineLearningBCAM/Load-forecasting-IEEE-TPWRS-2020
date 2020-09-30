@@ -1,9 +1,5 @@
 # Probabilistic Load Forecasting based on Adaptive Online Learning (APLF)
 
-Verónica Álvarez Castro
-
-veronicaalvcas@gmail.com
-
 This repository contains code for the paper Probabilistic Load Forecasting based on Adaptive Online Learning [[1]](#1). We use the implementation details described in the paper.
 
 ![grab-landing-page](docs/images/predictions.gif)
@@ -40,6 +36,12 @@ We save the data in .mat files that contain a struct with following fields:
 ## Test case
 
 We display in this reposity an example for a dataset that contains load data of [400 buildings](https://data.mendeley.com/datasets/zm4f727vvr/1#file-a01cdaa0-340d-4ebf-8fe5-c59a53d8f6b0). [Example folder](/Example) includes more details of the dataset, commands to execute the code, and results.
+
+## Support and Author
+
+Verónica Álvarez Castro
+
+veronicaalvcas@gmail.com [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)]()
 
 ## Citation
 
