@@ -5,7 +5,7 @@ This repository contains code for the paper Probabilistic Load Forecasting based
 
 ## Implementation of the method
 
-APLF folder contains the Python code, a Jupyter notebook and a Matlab folder that contains all the Matlab scripts required to execute the method:
+APLF folder contains the Python code [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](APLF/APLF.py), a Jupyter notebook [![nbviewer](https://img.shields.io/badge/jupyter_notebooks-nbviewer-purple.svg?style=flat-square)](APLF/APLF.ipynb) and a Matlab folder that contains all the Matlab scripts required to execute the method:
 
 * APLF.m is the main file.
 * initialize.m function inizializes model parameters.
