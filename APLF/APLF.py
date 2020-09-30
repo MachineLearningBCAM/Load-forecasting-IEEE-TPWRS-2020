@@ -11,7 +11,7 @@ from datetime import datetime, date, time
 import csv
 #import pandas as pd
 # data in .mat file
-path = 'Example/'
+path = '../Example/'
 # os.chdir(path)
 filename = '400buildings.mat'
 mat = loadmat(path + filename)  # load mat-file
