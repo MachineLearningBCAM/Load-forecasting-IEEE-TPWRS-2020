@@ -68,7 +68,7 @@ The corresponding BiBTeX citation is given below:
 
 ## License 
 
-[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/VeronicaAlvarez/online-probabilistic-load-forecasting/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/VeronicaAlvarez/online-probabilistic-load-forecasting/blob/master/LICENSE)
 
 
 ## Installation
