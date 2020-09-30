@@ -1,7 +1,7 @@
 # Probabilistic Load Forecasting based on Adaptive Online Learning (APLF)
 This repository contains code for the paper Probabilistic Load Forecasting based on Adaptive Online Learning [[1]](#1). We use the implementation details described in the paper.
 
-![grab-landing-page](predictions.gif)
+![grab-landing-page](docs/images/predictions.gif)
 
 ## Implementation of the method
 
