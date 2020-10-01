@@ -62,7 +62,7 @@ veronicaalvcas@gmail.com
 
 ## License 
 
-online-probabilistic-load-forecasting carries an MIT license.
+online-probabilistic-load-forecasting carries a MIT license.
 
 ## Citation
 
