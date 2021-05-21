@@ -15,7 +15,7 @@ function [MAPE, RMSE] = test(forecast, load_demand)
 %
 m = [];
 r = [];
-n = length(pred);
+n = length(forecast);
 for i = 1:n
     if load_demand(i) > 0
         % MAPE
