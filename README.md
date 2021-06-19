@@ -76,11 +76,14 @@ V. Alvarez, S. Mazuelas, J.A. Lozano.
 The corresponding BiBTeX citation is given below:
 
 ```
-@article{alvarez2020online,
-  title={Probabilistic Load Forecasting based on Adaptive Online Learning},
-  author={Alvarez, Verónica and Mazuelas, Santiago and Lozano, José Antonio},
-  journal={Submitted to IEEE Transactions on Power Systems},
-  year={2020},
-  publisher={IEEE}
+@article{AlvMazLoz:21,
+ title={Probabilistic Load Forecasting based on Adaptive Online Learning},
+ author={Ver\'{o}nica Alvarez and Santiago Mazuelas and Jos\'{e} A. Lozano},
+ journal={IEEE Transactions on Power Systems},
+ year={2021},
+ volume={36},
+ number={4},
+ month= {Jul.},
+ pages={3668 -- 3680}
 }
 ```
