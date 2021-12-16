@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Code for the paper Probabilistic Load Forecasting based on Adaptive Online Learning
-
 @author: Verónica Álvarez
 """
 import numpy as np
@@ -10,16 +9,16 @@ import matplotlib.pyplot as plt
 from datetime import datetime, date, time
 import csv
 #import pandas as pd
-# data in .mat file
-path = '../'
-# os.chdir(path)
+# data in .mat file
+path = '../Example/'
+# os.chdir(path)
 filename = '400buildings.mat'
 mat = loadmat(path + filename)  # load mat-file
 mdata = mat['data']  # variable in mat file
 mdtype = mdata.dtype 
 data = {n: mdata[n][0, 0] for n in mdtype.names}
 
-# [MAPE, RMSE, predictions, load_demand, estimated_errors] = APLF(data, 300, 0.2, 0.7, 24, 48, 3)
+# [MAPE, RMSE, predictions, load_demand, estimated_errors] = APLF(data, 300, 0.2, 0.7, 24, 48, 3)
 
 def initialize(C, R):
   # initialize parameters
