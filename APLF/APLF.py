@@ -11,7 +11,7 @@ from datetime import datetime, date, time
 import csv
 #import pandas as pd
 # data in .mat file
-path = '../Example/'
+path = '../'
 # os.chdir(path)
 filename = '400buildings.mat'
 mat = loadmat(path + filename)  # load mat-file
@@ -80,7 +80,7 @@ def update_model(Theta, Gamma, y, x, c, lambdad, lambdar):
   s0 = x[0]
   w = x[1:]
   L = len(y)
-  y = np.concatenate(([s0], y[0:]))
+  y = [s0, y[0:]]
   for i in range(L):
     [Theta.wt[0][c[i]], Theta.sigmat[0,c[i]], Gamma.Pt[0,c[i]], Gamma.gammat[0,c[i]]] = update_parameters(Theta.wt[0,c[i][0]], Theta.sigmat[0,c[i][0]], Gamma.Pt[0,c[i][0]], Gamma.gammat[0, c[i][0]], 1, w[0][i][0], 1)
     if Theta.wt[0][c[i]] - w[0][i][0] > 20 and (w[0][i][0] > 80 or w[0][i][0] < 20):
@@ -94,7 +94,7 @@ def update_model(Theta, Gamma, y, x, c, lambdad, lambdar):
       alpha2 = 0
     ud = np.ones((2, 1))
     ud[1, 0] = y[1][i][0]
-    [Theta.etad[0:, c[i]], Theta.sigmad[0, c[i][0]], Gamma.Pd[c[i][0]], Gamma.gammad[0, c[i][0]]] = update_parameters(Theta.etad[0:, c[i][0]], Theta.sigmad[0, c[i][0]], Gamma.Pd[c[i][0]], Gamma.gammad[0, c[i][0]], lambdad, y[i+1], ud)
+    [Theta.etad[0:, c[i]], Theta.sigmad[0, c[i][0]], Gamma.Pd[c[i][0]], Gamma.gammad[0, c[i][0]]] = update_parameters(Theta.etad[0:, c[i][0]], Theta.sigmad[0, c[i][0]], Gamma.Pd[c[i][0]], Gamma.gammad[0, c[i][0]], lambdad, y[1][i], ud)
     ur = np.ones((3, 1))
     ur[1, 0] = alpha1
     ur[2, 0] = alpha2
