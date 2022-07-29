@@ -62,7 +62,7 @@ valvarez@bcamath.org
 
 ## License 
 
-online-probabilistic-load-forecasting carries a MIT license.
+Load-forecasting-IEEE-TPWRS-2020 carries a MIT license.
 
 ## Citation
 
