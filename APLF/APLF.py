@@ -121,8 +121,8 @@ def prediction(theta, x, C):
       alpha1 = 0
       alpha2 = 0
     ur = np.transpose([1, alpha1, alpha2])
-    pred_s[i+1, 0] = (np.dot(np.transpose(ud), theta.etad[0:, c])*theta.sigmar[0][c]**2 + np.dot(np.transpose(ur), theta.etar[0:, c])*(theta.sigmad[0][c]**2 + np.dot(np.dot([0, 1], theta.etad[0:, c])**2, e[i])))/(theta.sigmar[0][c]*theta.sigmar[0][c] + theta.sigmad[0][c]**2 + np.dot((np.dot([0, 1], theta.etad[0:, c])**2),e[i]))
-    e[i+1, 0] = np.sqrt((theta.sigmad[0][c]**2 + np.dot(np.dot(np.dot([0, 1], theta.etad[0:, c])**2, e[i]), theta.sigmar[0][c]**2))/(theta.sigmar[0][c]**2 + theta.sigmad[0][c]**2 + np.dot(np.dot([0, 1], theta.etad[0:, c])**2, e[i])))
+    pred_s[i+1, 0] = (np.dot(np.transpose(ud), theta.etad[0:, c])*theta.sigmar[0][c]**2 + np.dot(np.transpose(ur), theta.etar[0:, c])*(theta.sigmad[0][c]**2 + np.dot(np.dot([0, 1], theta.etad[0:, c])**2, e[i]**2)))/(theta.sigmar[0][c]*theta.sigmar[0][c] + theta.sigmad[0][c]**2 + np.dot((np.dot([0, 1], theta.etad[0:, c])**2),e[i]**2))
+    e[i+1, 0] = np.sqrt((theta.sigmar[0][c]**2 * (theta.sigmad[0][c]**2 + np.dot(np.dot(np.dot([0, 1], theta.etad[0:, c])**2, e[i]**2)))/(theta.sigmar[0][c]**2 + theta.sigmad[0][c]**2 + np.dot(np.dot([0, 1], theta.etad[0:, c])**2, e[i]**2))
   return pred_s[1:], e[1:]
 
 # def APLF(data, days_train, lambdad, lambdar, L, C, R):
