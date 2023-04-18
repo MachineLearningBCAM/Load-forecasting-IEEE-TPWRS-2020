@@ -71,7 +71,7 @@ If you find useful the code in your research, please include explicit mention of
 <a id="1">[1]</a> 
 V. Alvarez, S. Mazuelas, J.A. Lozano.
 "Probabilistic Load Forecasting based on Adaptive Online Learning,"
-*Submitted to IEEE-Transactions on Power Systems.* 2021.
+*IEEE-Transactions on Power Systems.* 2021.
 
 The corresponding BiBTeX citation is given below:
 
