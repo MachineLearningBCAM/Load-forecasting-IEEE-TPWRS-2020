@@ -29,7 +29,7 @@ P = (1/lambda)*(P - (P*u*u'*P)/(lambda + u'*P*u));
 % Update gamma
 gamma = 1 + lambda*gamma;
 % Update sigma
-sigma = sqrt(sigma^2 - (1/gamma)*(sigma^2 - lambda*(s - u'*eta)^2)/(lambda + u'*P*u));
+sigma = sqrt(sigma^2 - (1/gamma)*(sigma^2 - lambda^2*(s - u'*eta)^2)/(lambda + u'*P*u)^2);
 % Update eta
 eta = eta + (P*u/(lambda + u'*P*u))*(s - u'*eta);
 end
