@@ -52,7 +52,7 @@ def update_parameters(eta, sigma, P, gamma, l, s, u):
       P = np.eye(len(P))
     P = (1/l)*(P - (np.dot(np.dot(np.dot(P, u), u.T), P)/(l + np.dot(np.dot(u.T, P),u))))
     gamma = 1 + l*gamma
-    sigma = np.sqrt(sigma**2 - (1/gamma)*(sigma**2 - l*(s - np.dot(u.T,eta)[0])**2)/(l + np.dot(np.dot(u.T, P)[0],u)[0]))
+    sigma = np.sqrt(sigma**2 - (1/gamma)*(sigma**2 - ( l**2*(s - np.dot(u.T,eta)[0])**2)/(l + np.dot(np.dot(u.T, P)[0],u)[0])**2))
     sigma = float(sigma)
     eta = eta + (np.dot(P, u)/(l + np.dot(np.dot(u.T, P)[0],u)[0]))*(s - np.dot(u.T, eta)[0])
   else:
@@ -60,7 +60,7 @@ def update_parameters(eta, sigma, P, gamma, l, s, u):
       P = 1
     P = (1/l)*(P - (P*u*np.transpose(u)*P)/(l + np.transpose(u)*P*u))
     gamma = 1 + l*gamma
-    sigma = np.sqrt(sigma**2 - (1/gamma)*(sigma**2 - l*(s - np.transpose(u)*eta)**2)/(l + np.transpose(u)*P*u))
+    sigma = np.sqrt(sigma**2 - (1/gamma)*(sigma**2 - ( l**2*(s - np.transpose(u)*eta)**2)/(l +  np.transpose(u)*P*u)**2))
     eta = eta + (P*u/(l + np.transpose(u)*P*u))*(s - np.transpose(u)*eta)
   return eta, sigma, P, gamma
 
